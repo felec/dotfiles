@@ -1,0 +1,323 @@
+{
+  "object": {
+    "prefix": "obj",
+    "body": ["object ${1:ObjectName} {", "\t${2:}", "}"],
+    "description": "Object"
+  },
+  "class": {
+    "prefix": "class",
+    "body": ["class ${1:ClassName} {", "\t${2:}", "}"],
+    "description": "Class"
+  },
+  "abstract_class": {
+    "prefix": "aclass",
+    "body": ["abstract class ${1:ClassName} {", "  ${2:}", "}"],
+    "description": "Abstract Class"
+  },
+  "inherited_class": {
+    "prefix": "iclass",
+    "body": ["class ${1:ClassName} extends ${2:ClassName} {", "  ${3:}", "}"],
+    "description": "Inherited Class"
+  },
+  "case_class": {
+    "prefix": "cclass",
+    "body": [
+      "case class ${1:ClassName}(",
+      "  ${2:parameter}: ${3:ParamterType}",
+      ")"
+    ],
+    "description": "Case Class"
+  },
+  "paramter_with_type": {
+    "prefix": "param",
+    "body": "${1:parameter}: ${2:ParameterType}",
+    "description": "Parameter with Type"
+  },
+  "named_argument": {
+    "prefix": "narg",
+    "body": ["${1:name} = ${2:argument}"],
+    "description": "Named Argument"
+  },
+  "trait": {
+    "prefix": "trait",
+    "body": ["trait ${1:TraitName} {", "\t${2:}", "}"],
+    "description": "Trait"
+  },
+  "inherited_trait": {
+    "prefix": "itrait",
+    "body": ["trait ${1:TraitName} extends ${2:TraitName}"],
+    "description": "Inherited Trait"
+  },
+  "main_object": {
+    "prefix": "objmain",
+    "body": [
+      "object ${1:ObjectName} {",
+      "\tdef main(parameter: Array[String]): Unit = {",
+      "\t\t${2:}",
+      "\t}",
+      "}"
+    ],
+    "description": "Object with Main Method"
+  },
+  "app": {
+    "prefix": "app",
+    "body": [
+      "object ${1:App} extends App {",
+      "\t${2:println(\"Hello, world!\")}",
+      "}"
+    ],
+    "description": "Object Extending App"
+  },
+  "scala_test": {
+    "prefix": "scalatest",
+    "body": [
+      "import org.scalatest.flatspec.AnyFlatSpec",
+      "import org.scalatest.matchers.should.Matchers",
+      "import org.scalatestplus.mockito.MockitoSugar",
+      "",
+      "class ${1:ClassName}Spec extends AnyFlatSpec with Matchers with MockitoSugar {",
+      "  import ${1:ClassName}Spec._",
+      "",
+      "  behavior of \"${1:ClassName}Impl\"",
+      "",
+      "  it should \"${2:behavior}\" in {",
+      "    ${3:implementation}",
+      "  }",
+      "}",
+      "",
+      "object ${1:ClassName}Spec {}",
+      ""
+    ],
+    "description": "ScalaTest Class"
+  },
+  "mock_val": {
+    "prefix": "mockvl",
+    "body": ["val ${1:name} = mock[${1:value}]"],
+    "description": "Mock Val Assignment"
+  },
+  "def_single_line": {
+    "prefix": "d",
+    "body": "def ${1:name}(${2:parameter}: ${3:ParameterType}): ${4:ReturnType} = ${5:}",
+    "description": "Single Line Method"
+  },
+  "def": {
+    "prefix": "def",
+    "body": [
+      "def ${1:name}(${2:parameter}: ${3:ParameterType}): ${4:ReturnType} = {",
+      "\t${5:}",
+      "}"
+    ],
+    "description": "Method"
+  },
+  "def_partial": {
+    "prefix": "defp",
+    "body": [
+      "def ${1:name}: PartialFunction[${2:ParametertType}, ${3:ParameterType}] = ${4:}"
+    ],
+    "description": "Partial Function"
+  },
+  "def_varargs": {
+    "prefix": "defv",
+    "body": ["def ${1:methodName}(parameter: ${2:ParameterType}*) = ${3:}"],
+    "description": "Varargs Method"
+  },
+  "curry": {
+    "prefix": "curr",
+    "body": [
+      "(${1:parameter}: ${2:ParameterType})(${3:parameter}: ${4:ParameterType}) = ${5:}"
+    ],
+    "description": "Curry"
+  },
+  "for": {
+    "prefix": "for",
+    "body": ["for (${1:element} <- elements) {", "\t${2:}", "}"],
+    "description": "For loop"
+  },
+  "while": {
+    "prefix": "while",
+    "body": ["while(${1:condition}) {", "\t${2:}", "}"],
+    "description": "While loop"
+  },
+  "if": {
+    "prefix": "if",
+    "body": ["if (${1:condition}) {", "  ${2:statement}", "}"],
+    "description": "If Statement"
+  },
+  "if_else": {
+    "prefix": "ifelse",
+    "body": [
+      "if (${1:condition}) {",
+      "\t${2:statement}",
+      "} else {",
+      "\t${3:statement}",
+      "}"
+    ],
+    "description": "If Else Statement"
+  },
+  "else_if": {
+    "prefix": "elseif",
+    "body": ["else if (${1:condition}) {", "  ${2:statement}", "}"],
+    "description": "Else If Statement"
+  },
+  "pattern_match": {
+    "prefix": "match",
+    "body": [
+      "${1:pattern} match {",
+      "\tcase ${2:value} => ${3:expression}",
+      "\tcase ${4:value} => ${5:expression}",
+      "}"
+    ],
+    "description": "Pattern Match"
+  },
+  "case_clause": {
+    "prefix": "case",
+    "body": ["case ${1:value} => ${2:expression}"],
+    "description": "Case Clause"
+  },
+  "for_comprehension": {
+    "prefix": "fc",
+    "body": ["for {", "  ${1:name} <- ${2:expression}", "} yield ${3:}"],
+    "description": "For Comprehension"
+  },
+  "for_comprehension_generator": {
+    "prefix": "fcgen",
+    "body": ["${1:name} <- ${2:expression}"],
+    "description": "For Comprehension Generator"
+  },
+  "log_info": {
+    "prefix": "li",
+    "body": ["log.info(${1:argument})"],
+    "description": "Log Information"
+  },
+  "comment_block": {
+    "prefix": "cmmb",
+    "body": ["/**", " * ${1:}", " */"],
+    "description": "Comment Block"
+  },
+  "s_interpolator": {
+    "prefix": "sint",
+    "body": ["s\"${1:}\""],
+    "description": "S Interpolator"
+  },
+  "val": {
+    "prefix": "vl",
+    "body": ["val ${1:name} = ${2:value}"],
+    "description": "Val Assignment"
+  },
+  "var": {
+    "prefix": "vr",
+    "body": ["var ${1:name} = ${2:value}"],
+    "description": "Var Assignment"
+  },
+  "anonymous_function": {
+    "prefix": "af",
+    "body": ["(${1:value}) => ${3:statement}"],
+    "description": "Anonymous Function"
+  },
+  "anonymous_function_block": {
+    "prefix": "afb",
+    "body": ["{ ${1:value} =>", "  ${2:statement}", "}"],
+    "description": "Anonymous Function Block"
+  },
+  "map": {
+    "prefix": "map",
+    "body": ["${1:iterator}.map(${2:value} => ${3:statement})", ""],
+    "description": "Map"
+  },
+  "map_underscore": {
+    "prefix": "mapu",
+    "body": ["${1:iterator}.map(_${2:})"],
+    "description": "Map Underscore"
+  },
+  "map_pattern_match": {
+    "prefix": "mappm",
+    "body": ["map {", "  case ${1:value} => ${2:expression}", "}"],
+    "description": "Map Pattern Match"
+  },
+  "wildcard_import": {
+    "prefix": "im",
+    "body": ["import ${1:import}._"],
+    "description": "Wildcard Import"
+  },
+  "selective_import": {
+    "prefix": "ims",
+    "body": ["import ${1:import}.{${2:ImportClass}}"],
+    "description": "Selective Import"
+  },
+  "tuple2": {
+    "prefix": "tup2",
+    "body": ["(${1:value}, ${2:value})${3:}"],
+    "description": "Tuple2"
+  },
+  "tuple3": {
+    "prefix": "tup3",
+    "body": ["(${1:value}, ${2:value}, ${3:value})${4:}"],
+    "description": "Tuple3"
+  },
+  "list": {
+    "prefix": "list",
+    "body": ["List(${1:})${2:}"],
+    "description": "List"
+  },
+  "seq": {
+    "prefix": "seq",
+    "body": ["Seq(${1:})${2:}"],
+    "description": "Seq"
+  },
+  "key_value": {
+    "prefix": "kv",
+    "body": ["${1:key} -> ${2:value}"],
+    "description": "Key Value"
+  },
+  "some": {
+    "prefix": "some",
+    "body": ["Some(${1:argument})${2:}"],
+    "description": "Some"
+  },
+  "none": {
+    "prefix": "none",
+    "body": ["None"],
+    "description": "None"
+  },
+  "type_parameter": {
+    "prefix": "tp",
+    "body": ["${1:Type}[${2:TypeParameter}]"],
+    "description": "Type Parameter"
+  },
+  "enumeration": {
+    "prefix": "enum",
+    "body": [
+      "object ${1:ObjectName} extends Enumeration {",
+      "val ${2:name}, ${3:name}, ${4:name} = Value",
+      "}"
+    ],
+    "description": "Enumeration"
+  },
+  "try_catch": {
+    "prefix": "try",
+    "body": ["try {", "  ${1:try}", "} catch {", "  ${2:error}", "}"],
+    "description": "Try Catch"
+  },
+  "json_obj": {
+    "prefix": "jsonobj",
+    "body": ["Json.obj(${1:key} -> ${2:value})"],
+    "description": "Json Object"
+  },
+  "json_to_json": {
+    "prefix": "tojson",
+    "body": ["Json.toJson(${1:argument}))"],
+    "description": "To JSValue"
+  },
+  "json_format": {
+    "prefix": "format",
+    "body": ["implicit val format = Json.format[${1:ClassName}]"],
+    "description": "Json Format"
+  },
+  "json_format_default": {
+    "prefix": "formatdef",
+    "body": [
+      "implicit val format = Json.using[Json.WithDefaultValues].format[${1:ClassName}]"
+    ],
+    "description": "Json Format with Default Values"
+  }
+}
