@@ -23,14 +23,14 @@ set ignorecase
 set smartcase
 set nocompatible
 set wildmode=full
-set clipboard=unnamedplus
+set clipboard=unnamed
 syntax on
 filetype plugin on
 runtime macros/matchit.vim
 
 " PLUGINS ---------------------------------------------------------------- {{{
 call plug#begin()
-Plug 'EdenEast/nightfox.nvim'
+" Plug 'EdenEast/nightfox.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'vimwiki/vimwiki'
 Plug 'ryanoasis/vim-devicons'
@@ -38,7 +38,7 @@ Plug 'numToStr/Comment.nvim'
 call plug#end()
 
 set rtp+=/usr/local/opt/fzf
-colorscheme carbonfox
+" colorscheme carbonfox
 " }}}
 
 " MAPPINGS --------------------------------------------------------------- {{{
