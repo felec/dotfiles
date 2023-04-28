@@ -2,16 +2,19 @@ return {
   {
     "nvim-treesitter/nvim-treesitter",
     opts = {
-      autotag = {
-        enable = true,
-      },
+      highlight = { enable = true },
+      indent = { enable = true },
+      context_commentstring = { enable = true, enable_autocmd = false },
+      autotag = { enable = true },
       ensure_installed = {
         "bash",
-        "help",
+        "c",
         "html",
         "javascript",
         "json",
         "lua",
+        "luadoc",
+        "luap",
         "markdown",
         "markdown_inline",
         "python",
@@ -20,7 +23,17 @@ return {
         "tsx",
         "typescript",
         "vim",
+        "vimdoc",
         "yaml",
+      },
+      incremental_selection = {
+        enable = true,
+        keymaps = {
+          init_selection = "<C-space>",
+          node_incremental = "<C-space>",
+          scope_incremental = false,
+          node_decremental = "<bs>",
+        },
       },
     },
   },
