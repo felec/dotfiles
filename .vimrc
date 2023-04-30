@@ -16,7 +16,6 @@ set expandtab
 set autoindent
 set incsearch
 set hlsearch
-" set autowrite
 set nobackup
 set wildmenu
 set ignorecase
@@ -30,15 +29,14 @@ runtime macros/matchit.vim
 
 " PLUGINS ---------------------------------------------------------------- {{{
 call plug#begin()
-" Plug 'EdenEast/nightfox.nvim'
 Plug 'nvim-lualine/lualine.nvim'
-Plug 'vimwiki/vimwiki'
+Plug 'EdenEast/nightfox.nvim'
 Plug 'ryanoasis/vim-devicons'
 Plug 'numToStr/Comment.nvim'
+Plug 'vimwiki/vimwiki'
 call plug#end()
 
 set rtp+=/usr/local/opt/fzf
-" colorscheme carbonfox
 " }}}
 
 " MAPPINGS --------------------------------------------------------------- {{{
