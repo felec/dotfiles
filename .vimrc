@@ -30,7 +30,7 @@ runtime macros/matchit.vim
 
 " PLUGINS ---------------------------------------------------------------- {{{
 call plug#begin()
-" Plug 'EdenEast/nightfox.nvim'
+Plug 'EdenEast/nightfox.nvim'
 Plug 'nvim-lualine/lualine.nvim'
 Plug 'vimwiki/vimwiki'
 Plug 'ryanoasis/vim-devicons'
