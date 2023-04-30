@@ -27,18 +27,13 @@ set clipboard=unnamed
 syntax on
 filetype plugin on
 runtime macros/matchit.vim
+colorscheme slate
 
 " PLUGINS ---------------------------------------------------------------- {{{
 call plug#begin()
-Plug 'EdenEast/nightfox.nvim'
-Plug 'nvim-lualine/lualine.nvim'
-Plug 'vimwiki/vimwiki'
-Plug 'ryanoasis/vim-devicons'
-Plug 'numToStr/Comment.nvim'
 call plug#end()
 
 set rtp+=/usr/local/opt/fzf
-" colorscheme carbonfox
 " }}}
 
 " MAPPINGS --------------------------------------------------------------- {{{
@@ -70,6 +65,9 @@ noremap <C-up> <C-w>+
 noremap <C-down> <C-w>-
 noremap <C-left> <C-w>>
 noremap <C-right> <C-w><
+
+" Fix Kitty background color
+let &t_ut=''
 
 " macOS Mode Settings
 let &t_SI = "\<Esc>[6 q"
