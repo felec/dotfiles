@@ -13,6 +13,6 @@ Add the following to ~/.bloop/.bloop.json\
 
 ### .zprofile
 Add the following to ~/.zprofile\
-export OPENAI_API_KEY="XXX"\
+>export OPENAI_API_KEY="XXX"\
 export MYZSHRC="$HOME/.zshrc"\
 export MYVIMRC="$HOME/.vimrc"
