@@ -301,23 +301,16 @@
   "json_obj": {
     "prefix": "jsonobj",
     "body": ["Json.obj(${1:key} -> ${2:value})"],
-    "description": "Json Object"
+    "description": "Play Framework Json Object"
   },
   "json_to_json": {
     "prefix": "tojson",
     "body": ["Json.toJson(${1:argument}))"],
-    "description": "To JSValue"
+    "description": "Play Framework To JSValue"
   },
   "json_format": {
-    "prefix": "format",
+    "prefix": "jsonformat",
     "body": ["implicit val format = Json.format[${1:ClassName}]"],
-    "description": "Json Format"
-  },
-  "json_format_default": {
-    "prefix": "formatdef",
-    "body": [
-      "implicit val format = Json.using[Json.WithDefaultValues].format[${1:ClassName}]"
-    ],
-    "description": "Json Format with Default Values"
+    "description": "Play Framework Json Format"
   }
 }
