@@ -19,7 +19,7 @@ return {
         superMethodLensesEnabled = true,
         enableSemanticHighlighting = true,
         showImplicitConversionsAndClasses = true,
-        ammoniteJvmProperties = { "-Xmx2048m", "-Xms100m" },
+        ammoniteJvmProperties = { "-Xmx2G", "-Xms100m" },
         sbtScript = "/usr/local/bin/sbt",
         javaHome = "/usr/local/opt/openjdk/libexec/openjdk.jdk/Contents/Home",
         scalafmtConfigPath = "/Users/fele/Dev/ChatmeterRepo/chatmeter/.scalafmt.conf",

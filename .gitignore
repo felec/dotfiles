@@ -6,3 +6,7 @@ debug
 foo.*
 *.log
 data
+.DS_Store
+
+# nvim lua
+nvim/lazy-lock.json
