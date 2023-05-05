@@ -5,7 +5,6 @@ return {
     opts = {
       options = {
         always_show_bufferline = true,
-        -- separator_style = { "", "" },
         separator_style = "slant",
         indicator = { style = "none" },
         buffer_close_icon = "",
