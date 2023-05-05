@@ -16,7 +16,6 @@ set expandtab
 set autoindent
 set incsearch
 set hlsearch
-" set autowrite
 set nobackup
 set wildmenu
 set ignorecase
@@ -26,11 +25,11 @@ set wildmode=full
 set clipboard=unnamed
 syntax on
 filetype plugin on
-runtime macros/matchit.vim
 colorscheme slate
 
 " PLUGINS ---------------------------------------------------------------- {{{
 call plug#begin()
+
 call plug#end()
 
 set rtp+=/usr/local/opt/fzf
@@ -68,11 +67,6 @@ noremap <C-right> <C-w><
 
 " Fix Kitty background color
 let &t_ut=''
-
-" macOS Mode Settings
-let &t_SI = "\<Esc>[6 q"
-let &t_SR = "\<Esc>[4 q"
-let &t_EI = "\<Esc>[2 q"
 " }}}
 
 " VIMSCRIPT -------------------------------------------------------------- {{{

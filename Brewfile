@@ -1,5 +1,6 @@
 tap "derailed/k9s"
 tap "homebrew/bundle"
+tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
@@ -25,8 +26,6 @@ brew "neovim"
 brew "node"
 # Zsh prompt for Astronauts
 brew "spaceship"
-# Organize software neatly under a single directory tree (e.g. /usr/local)
-brew "stow"
 # Terminal multiplexer
 brew "tmux"
 # Tools for the WireGuard secure network tunnel
@@ -37,6 +36,8 @@ brew "zoxide"
 brew "derailed/k9s/k9s"
 # Web browser
 cask "firefox-developer-edition"
+# Developer targeted fonts with a high number of glyphs
+cask "font-iosevka-nerd-font"
 # Clipboard manager
 cask "maccy"
 # Imaging utility to install operating systems to a microSD card
