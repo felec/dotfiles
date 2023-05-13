@@ -23,6 +23,11 @@ return {
         },
       },
       default_component_configs = {
+        name = {
+          trailing_slash = false,
+          use_git_status_colors = true,
+          highlight = "NeoTreeFileName",
+        },
         indent = {
           with_expanders = true, -- if nil and file nesting is enabled, will enable expanders
           expander_collapsed = "",
@@ -33,14 +38,14 @@ return {
           symbols = {
             added = "", -- or "✚", but this is redundant info if you use git_status_colors on the name
             modified = "", -- or "", but this is redundant info if you use git_status_colors on the name
-            deleted = "✖",
+            deleted = "󰅘",
             renamed = "",
             -- Status type
-            untracked = "",
-            ignored = "",
-            unstaged = "",
-            staged = "",
-            conflict = "",
+            untracked = "󰄱",
+            ignored = "󰱒",
+            unstaged = "󰛲",
+            staged = "󰄵",
+            conflict = "󰳤",
           },
         },
       },
