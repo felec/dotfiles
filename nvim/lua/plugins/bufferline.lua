@@ -7,7 +7,7 @@ return {
         always_show_bufferline = true,
         separator_style = "slant",
         indicator = { style = "none" },
-        buffer_close_icon = "",
+        buffer_close_icon = "",
         modified_icon = "●",
         close_icon = "",
         left_trunc_marker = "",
