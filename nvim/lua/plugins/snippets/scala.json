@@ -189,6 +189,11 @@
     "body": ["log.info(${1:argument})"],
     "description": "Log Information"
   },
+  "print_line": {
+    "prefix": "pl",
+    "body": ["println(${1:argument})${2:}"],
+    "description": "Print Line"
+  },
   "comment_block": {
     "prefix": "cmmb",
     "body": ["/**", " * ${1:}", " */"],
