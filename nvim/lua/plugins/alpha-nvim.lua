@@ -15,12 +15,12 @@ return {
       dashboard.section.header.val = vim.split(logo, "\n")
       dashboard.section.buttons.val = {
         dashboard.button("s", "" .. "  Restore Session", [[:lua require("persistence").load() <cr>]]),
-        dashboard.button("r", " " .. " Recent Files", ":Telescope oldfiles <CR>"),
-        dashboard.button("f", "" .. "  Find Files", ":Telescope find_files <CR>"),
+        dashboard.button("r", "" .. "  Recent Files", ":Telescope oldfiles <CR>"),
+        dashboard.button("f", "" .. "  Find Files", ":Telescope find_files <CR>"),
         dashboard.button("g", "" .. "  Grep", ":Telescope live_grep <CR>"),
         dashboard.button("u", "" .. "  Update", ":Lazy update <CR>"),
-        dashboard.button("h", " " .. " Health", ":Lazy health <CR>"),
-        dashboard.button("q", " " .. " Quit", ":qa<CR>"),
+        dashboard.button("h", "" .. "  Health", ":Lazy health <CR>"),
+        dashboard.button("q", "󰗼" .. "  Quit", ":qa<CR>"),
       }
       for _, button in ipairs(dashboard.section.buttons.val) do
         button.opts.hl = "AlphaButtons"
