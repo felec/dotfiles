@@ -37,7 +37,7 @@ return {
           options = { toggle_hidden_on_enter = true },
           items = {
             {
-              name = "謹FE",
+              name = "謹 FE",
               priority = 1,
               matcher = function(buf)
                 return vim.endswith(buf.path, ".js")
@@ -48,7 +48,7 @@ return {
               end,
             },
             {
-              name = " BE",
+              name = "  BE",
               priority = 2,
               matcher = function(buf)
                 return vim.endswith(buf.path, ".scala")
