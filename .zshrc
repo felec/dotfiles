@@ -95,6 +95,10 @@ set rtp+=/usr/local/opt/fzf
 
 # Enable zoxide
 eval "$(zoxide init zsh)"
+
+# Enable starship
+eval "$(starship init zsh)"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -123,7 +127,11 @@ alias nv="nvim"
 alias k="kubectl"
 alias so="source"
 alias lg="lazygit"
-export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"  # Added by n-install (see http://git.io/n-install-repo).
+
+# Added by n-install (see http://git.io/n-install-repo).
+export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
+
+export EDITOR=vim
 
 # Java configuration
 export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
