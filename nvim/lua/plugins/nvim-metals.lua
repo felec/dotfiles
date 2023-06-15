@@ -21,7 +21,7 @@ return {
         showImplicitConversionsAndClasses = true,
         ammoniteJvmProperties = { "-Xmx2G", "-Xms100m" },
         sbtScript = "/usr/local/bin/sbt",
-        javaHome = "/usr/local/opt/openjdk/libexec/openjdk.jdk/Contents/Home",
+        javaHome = "/usr/local/Cellar/openjdk@17/17.0.7/libexec/openjdk.jdk/Contents/Home",
         scalafmtConfigPath = "/Users/fele/Dev/ChatmeterRepo/chatmeter/.scalafmt.conf",
         excludedPackages = {
           "akka.actor.typed.javadsl",

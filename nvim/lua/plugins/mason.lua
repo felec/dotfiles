@@ -25,7 +25,6 @@ return {
         -- Formatter
         "shfmt",
         "stylua",
-        "yamlfmt",
         "prettier",
       },
     },
