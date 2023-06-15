@@ -8,12 +8,10 @@
 `ln -sfn ~/.dotfiles/.vimrc ~/.vimrc`
 
 
-### scala
-Add the following to ~/.bloop/.bloop.json\
+### ~/.bloop/.bloop.json
 `{"javaHome":"/usr/local/opt/openjdk/libexec/openjdk@17.jdk/Contents/Home", "javaOptions": ["-Xmx2G"]}`
 
-### .zprofile
-Add the following to ~/.zprofile
+### ~/.zprofile
 >export OPENAI_API_KEY="XXX"\
 export MYZSHRC="$HOME/.zshrc"\
-export MYVIMRC="$HOME/.vimrc"\
+export MYVIMRC="$HOME/.vimrc"
