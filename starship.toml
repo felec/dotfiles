@@ -1,0 +1,72 @@
+format = """
+$directory\
+[](fg:#808080 bg:#aaaaaa)\
+$git_branch\
+$git_status\
+[](fg:#aaaaaa bg:#eeeeee)\
+$nodejs\
+$rust\
+$golang\
+$java\
+$php\
+$docker_context\
+[](fg:#eeeeee bg:#000000)\
+\n$character"""
+
+[character]
+success_symbol = "[➜ ](bold green)"
+error_symbol = "[✘ ](bold red)"
+vimcmd_symbol = "[❰](bold blue)"
+
+[directory]
+style = "fg:#000000 bg:#808080"
+format = "[ $path ]($style)"
+truncation_length = 3
+truncation_symbol = "…/"
+
+[directory.substitutions]
+"~" = "󰋜 "
+
+[git_branch]
+symbol = ""
+style = "bg:#aaaaaa"
+format = '[[ $symbol $branch ](fg:#000000 bg:#aaaaaa)]($style)'
+
+[git_status]
+style = "bg:#aaaaaa"
+format = '[[($all_status$ahead_behind )](fg:#000000 bg:#aaaaaa)]($style)'
+
+[nodejs]
+symbol = ""
+style = "bg:#eeeeee"
+format = '[[ $symbol ($version) ](fg:#000000 bg:#eeeeee)]($style)'
+
+[rust]
+symbol = ""
+style = "bg:#eeeeee"
+format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
+
+[golang]
+symbol = ""
+style = "bg:#eeeeee"
+format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
+
+[php]
+symbol = ""
+style = "bg:#212736"
+format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
+
+[java]
+symbol = " "
+style = "bg:#eeeeee"
+format = '[[ $symbol ($version) ](fg:#000000 bg:#eeeeee)]($style)'
+
+[scala]
+symbol = ""
+style = "bg:#eeeeee"
+format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
+
+[docker_context]
+symbol = " "
+style = "bg:#eeeeee"
+format = '[[ $symbol $context ](fg:#000000 bg:#eeeeee)]($style) $path'
