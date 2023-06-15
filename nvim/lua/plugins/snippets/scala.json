@@ -97,16 +97,12 @@
   },
   "def_single_line": {
     "prefix": "d",
-    "body": "def ${1:name}(${2:parameter}: ${3:ParameterType}): ${4:ReturnType} = ${5:}",
+    "body": "def ${1:name}(): ${4:ReturnType} = ${5:}",
     "description": "Single Line Method"
   },
   "def": {
     "prefix": "def",
-    "body": [
-      "def ${1:name}(${2:parameter}: ${3:ParameterType}): ${4:ReturnType} = {",
-      "\t${5:}",
-      "}"
-    ],
+    "body": ["def ${1:name}(): ${4:ReturnType} = {", "\t${5:}", "}"],
     "description": "Method"
   },
   "def_partial": {
@@ -223,16 +219,6 @@
     "prefix": "afb",
     "body": ["{ ${1:value} =>", "  ${2:statement}", "}"],
     "description": "Anonymous Function Block"
-  },
-  "map": {
-    "prefix": "map",
-    "body": ["${1:iterator}.map(${2:value} => ${3:statement})", ""],
-    "description": "Map"
-  },
-  "map_underscore": {
-    "prefix": "mapu",
-    "body": ["${1:iterator}.map(_${2:})"],
-    "description": "Map Underscore"
   },
   "map_pattern_match": {
     "prefix": "mappm",

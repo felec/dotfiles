@@ -1,7 +1,7 @@
 return {
   {
     "nvim-treesitter/playground",
-    enabled = false,
+    enabled = true,
   },
   {
     "nvim-neotest/neotest",
