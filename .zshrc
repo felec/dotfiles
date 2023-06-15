@@ -99,6 +99,9 @@ eval "$(zoxide init zsh)"
 # Enable starship
 eval "$(starship init zsh)"
 
+# Java configuration
+# export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
+
 # export MANPATH="/usr/local/man:$MANPATH"
 
 # You may need to manually set your language environment
@@ -132,8 +135,3 @@ alias lg="lazygit"
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
 
 export EDITOR=vim
-
-# Java configuration
-export PATH="/usr/local/opt/openjdk@8/bin:$PATH"
-
-source /opt/homebrew/opt/spaceship/spaceship.zsh

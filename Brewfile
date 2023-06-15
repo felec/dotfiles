@@ -2,6 +2,8 @@ tap "derailed/k9s"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
+# Record and share terminal sessions
+brew "asciinema"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Distributed revision control system
@@ -24,8 +26,8 @@ brew "tree-sitter"
 brew "neovim"
 # Platform built on V8 to build network applications
 brew "node"
-# Zsh prompt for Astronauts
-brew "spaceship"
+# Cross-shell prompt for astronauts
+brew "starship"
 # Terminal multiplexer
 brew "tmux"
 # Tools for the WireGuard secure network tunnel
@@ -34,6 +36,8 @@ brew "wireguard-tools"
 brew "zoxide"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
+# Free and open-source web browser
+cask "chromium"
 # Web browser
 cask "firefox-developer-edition"
 # Developer targeted fonts with a high number of glyphs
