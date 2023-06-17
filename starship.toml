@@ -46,16 +46,6 @@ symbol = ""
 style = "bg:#eeeeee"
 format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
 
-[golang]
-symbol = ""
-style = "bg:#eeeeee"
-format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
-
-[php]
-symbol = ""
-style = "bg:#212736"
-format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
-
 [java]
 symbol = " "
 style = "bg:#eeeeee"
@@ -63,6 +53,36 @@ format = '[[ $symbol ($version) ](fg:#000000 bg:#eeeeee)]($style)'
 
 [scala]
 symbol = ""
+style = "bg:#eeeeee"
+format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
+
+[lua]
+symbol = " "
+style = "bg:#eeeeee"
+format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
+
+[golang]
+symbol = " "
+style = "bg:#eeeeee"
+format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
+
+[dart]
+symbol = " "
+style = "bg:#eeeeee"
+format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
+
+[python]
+symbol = " "
+style = "bg:#eeeeee"
+format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
+
+[ruby]
+symbol = " "
+style = "bg:#eeeeee"
+format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
+
+[package]
+symbol = "󰏗 "
 style = "bg:#eeeeee"
 format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
 
