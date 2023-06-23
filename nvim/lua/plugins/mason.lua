@@ -24,7 +24,9 @@ return {
         "bash-debug-adapter",
         -- Formatter
         "shfmt",
+        "black",
         "stylua",
+        "yamlfmt",
         "prettier",
       },
     },
