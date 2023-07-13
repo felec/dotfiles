@@ -20,9 +20,9 @@ map("i", "jj", "<esc>", { desc = "Exit insert mode" })
 map("i", "<c-l>", "<c-o>a", { desc = "Move right of enclosing surround object" })
 
 -- Setup for treesj
-map("n", "<leader>m", function()
-  require("treesj").toggle({ split = { recursive = true } })
-end, { desc = "Toggle (split/join) node under cursor" })
+-- map("n", "<leader>m", function()
+--   require("treesj").toggle({ split = { recursive = true } })
+-- end, { desc = "Toggle (split/join) node under cursor" })
 
 --Setup for chatgpt
 map("n", "<leader>cp", "<cmd>ChatGPT<cr>", { desc = "ChatGPT general prompt" })
