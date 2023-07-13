@@ -16,11 +16,12 @@ return {
             filetypes = {
               "javascript",
               "typescript",
+              "javascriptreact",
+              "typescriptreact",
               "css",
               "scss",
               "html",
               "json",
-              -- "yaml",
               "markdown",
               "graphql",
               "md",

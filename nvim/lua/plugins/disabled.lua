@@ -1,7 +1,11 @@
 return {
   {
+    "Wansmer/treesj",
+    enabled = false,
+  },
+  {
     "nvim-treesitter/playground",
-    enabled = true,
+    enabled = false,
   },
   {
     "nvim-neotest/neotest",
