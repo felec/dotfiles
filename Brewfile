@@ -2,6 +2,10 @@ tap "derailed/k9s"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Record and share terminal sessions
 brew "asciinema"
 # Play, record, convert, and stream audio and video
@@ -26,6 +30,10 @@ brew "tree-sitter"
 brew "neovim"
 # Platform built on V8 to build network applications
 brew "node"
+# Search tool like grep and The Silver Searcher
+brew "ripgrep"
+# Utility that provides fast incremental file transfer
+brew "rsync"
 # Cross-shell prompt for astronauts
 brew "starship"
 # Terminal multiplexer
@@ -36,6 +44,8 @@ brew "wireguard-tools"
 brew "zoxide"
 # Kubernetes CLI To Manage Your Clusters In Style!
 brew "derailed/k9s/k9s"
+# 3D creation suite
+cask "blender"
 # Free and open-source web browser
 cask "chromium"
 # Web browser
