@@ -15,7 +15,7 @@ return {
         "typescript-language-server",
         "tailwindcss-language-server",
         -- Linter
-        "flake8",
+        "mypy",
         "jsonlint",
         "shellcheck",
         "markdownlint",
