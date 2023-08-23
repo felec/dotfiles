@@ -95,14 +95,9 @@
     "body": ["val ${1:name} = mock[${1:value}]"],
     "description": "Mock Val Assignment"
   },
-  "def_single_line": {
-    "prefix": "d",
-    "body": "def ${1:name}(): ${4:ReturnType} = ${5:}",
-    "description": "Single Line Method"
-  },
   "def": {
     "prefix": "def",
-    "body": ["def ${1:name}(): ${4:ReturnType} = {", "\t${5:}", "}"],
+    "body": "def ${1:name}(${2:}): ${3:ReturnType} = ${4:}",
     "description": "Method"
   },
   "def_partial": {
@@ -212,12 +207,12 @@
   },
   "anonymous_function": {
     "prefix": "af",
-    "body": ["(${1:value}) => ${3:statement}"],
+    "body": ["(${1:}) => ${3:statement}"],
     "description": "Anonymous Function"
   },
   "anonymous_function_block": {
     "prefix": "afb",
-    "body": ["{ ${1:value} =>", "  ${2:statement}", "}"],
+    "body": ["{ ${1:} =>", "  ${2:statement}", "}"],
     "description": "Anonymous Function Block"
   },
   "map_pattern_match": {
