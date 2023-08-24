@@ -2,12 +2,24 @@ tap "derailed/k9s"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
 tap "homebrew/cask-versions"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
+# Image format providing lossless and lossy compression for web images
+brew "webp"
+# New file format for still image compression
+brew "jpeg-xl"
+# Codec library for encoding and decoding AV1 video streams
+brew "aom"
 # Interpreted, interactive, object-oriented programming language
 brew "python@3.11"
 # Record and share terminal sessions
 brew "asciinema"
+# Pure Scala Artifact Fetching
+brew "coursier"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
+# Image processing and image analysis library
+brew "leptonica"
+# OCR (Optical Character Recognition) engine
+brew "tesseract"
 # Play, record, convert, and stream audio and video
 brew "ffmpeg"
 # Distributed revision control system
@@ -52,6 +64,8 @@ cask "chromium"
 cask "firefox-developer-edition"
 # Developer targeted fonts with a high number of glyphs
 cask "font-iosevka-nerd-font"
+# 3D parametric modeler
+cask "freecad"
 # Clipboard manager
 cask "maccy"
 # Imaging utility to install operating systems to a microSD card
