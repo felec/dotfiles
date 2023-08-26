@@ -8,9 +8,6 @@
 `ln -sfn ~/.dotfiles/.vimrc ~/.vimrc`
 
 
-### ~/.bloop/.bloop.json
-`{"javaHome":"/usr/local/opt/openjdk/libexec/openjdk@17.jdk/Contents/Home", "javaOptions": ["-Xmx2G"]}`
-
 ### ~/.zprofile
 >export OPENAI_API_KEY="XXX"\
 export MYZSHRC="$HOME/.zshrc"\
