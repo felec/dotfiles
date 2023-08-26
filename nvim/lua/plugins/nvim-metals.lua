@@ -19,9 +19,9 @@ return {
         superMethodLensesEnabled = true,
         enableSemanticHighlighting = true,
         showImplicitConversionsAndClasses = true,
-        ammoniteJvmProperties = { "-Xmx2G", "-Xms100m" },
+        ammoniteJvmProperties = { "-Xmx8G", "-Xms2G" },
         sbtScript = "/usr/local/bin/sbt",
-        javaHome = "/usr/local/Cellar/openjdk@17/17.0.7/libexec/openjdk.jdk/Contents/Home",
+        javaHome = "/usr/local/Cellar/openjdk@17/17.0.8/libexec/openjdk.jdk/Contents/Home",
         scalafmtConfigPath = "/Users/fele/Dev/ChatmeterRepo/chatmeter/.scalafmt.conf",
         excludedPackages = {
           "akka.actor.typed.javadsl",
