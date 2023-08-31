@@ -11,4 +11,5 @@
 ### ~/.zprofile
 >export OPENAI_API_KEY="XXX"\
 export MYZSHRC="$HOME/.zshrc"\
-export MYVIMRC="$HOME/.vimrc"
+export MYVIMRC="$HOME/.vimrc"\
+export SBT_OPTS="-Xms1G -Xmx8G -XX:MaxHeapSize=8G"
