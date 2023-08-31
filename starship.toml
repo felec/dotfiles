@@ -8,7 +8,9 @@ $git_branch\
 $git_status\
 [](fg:#aaaaaa bg:#eeeeee)\
 $nodejs\
+$python\
 $rust\
+$ruby\
 $golang\
 $java\
 $php\
@@ -77,7 +79,7 @@ format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
 [python]
 symbol = " "
 style = "bg:#eeeeee"
-format = '[[ $symbol ](fg:#000000 bg:#eeeeee)]($style)'
+format = '[[ $symbol ($version) ](fg:#000000 bg:#eeeeee)]($style)'
 
 [ruby]
 symbol = " "
