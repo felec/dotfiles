@@ -14,10 +14,10 @@ brew "python@3.11"
 brew "asciinema"
 # Pure Scala Artifact Fetching
 brew "coursier"
-# Cryptography and SSL/TLS Toolkit
-brew "openssl@1.1"
 # Image processing and image analysis library
 brew "leptonica"
+# Cryptography and SSL/TLS Toolkit
+brew "openssl@1.1"
 # OCR (Optical Character Recognition) engine
 brew "tesseract"
 # Play, record, convert, and stream audio and video
@@ -52,6 +52,8 @@ brew "starship"
 brew "tmux"
 # Tools for the WireGuard secure network tunnel
 brew "wireguard-tools"
+# Fork of youtube-dl with additional features and fixes
+brew "yt-dlp"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # Kubernetes CLI To Manage Your Clusters In Style!
