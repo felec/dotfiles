@@ -241,7 +241,7 @@
     "description": "Tuple3"
   },
   "list": {
-    "prefix": "list",
+    "prefix": "ls",
     "body": ["List(${1:})${2:}"],
     "description": "List"
   },
@@ -256,12 +256,12 @@
     "description": "Key Value"
   },
   "some": {
-    "prefix": "some",
+    "prefix": "so",
     "body": ["Some(${1:argument})${2:}"],
     "description": "Some"
   },
   "none": {
-    "prefix": "none",
+    "prefix": "no",
     "body": ["None"],
     "description": "None"
   },

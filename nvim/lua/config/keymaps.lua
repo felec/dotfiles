@@ -26,8 +26,8 @@ map("i", "<c-l>", "<c-o>a", { desc = "Move right of enclosing surround object" }
 
 --Setup for chatgpt
 map("n", "<leader>cp", "<cmd>ChatGPT<cr>", { desc = "ChatGPT general prompt" })
-map("n", "<leader>cs", "<cmd>ChatGPTActAs<cr>", { desc = "ChatGPT selection prompt" })
-map("v", "<leader>ci", "<cmd>ChatGPTEditWithInstructions<cr>", { desc = "ChatGPT interactive prompt" })
+-- map("n", "<leader>cs", "<cmd>ChatGPTActAs<cr>", { desc = "ChatGPT selection prompt" })
+-- map("v", "<leader>ci", "<cmd>ChatGPTEditWithInstructions<cr>", { desc = "ChatGPT interactive prompt" })
 
 --Setup for toggleterm
 map("n", "<leader>1", "<cmd>ToggleTerm<cr>", { desc = "Open toggleterm window" })
