@@ -71,7 +71,11 @@ INSERT_MODE_INDICATOR="%F{yellow}+%f"
 # Add wisely, as too many plugins slow down shell startup.
 plugins=(
  git
+ npm
+ brew
  tmux
+ yarn
+ rsync
  docker
  vi-mode
  systemd
@@ -130,6 +134,7 @@ alias nv="nvim"
 alias k="kubectl"
 alias so="source"
 alias lg="lazygit"
+alias dump="brew bundle dump --force"
 
 # Added by n-install (see http://git.io/n-install-repo).
 export N_PREFIX="$HOME/n"; [[ :$PATH: == *":$N_PREFIX/bin:"* ]] || PATH+=":$N_PREFIX/bin"
