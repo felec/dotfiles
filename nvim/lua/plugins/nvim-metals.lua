@@ -19,7 +19,7 @@ return {
         superMethodLensesEnabled = true,
         enableSemanticHighlighting = true,
         showImplicitConversionsAndClasses = true,
-        serverProperties = { "-Xmx8G", "-Xms1G" },
+        serverProperties = { "-Xmx4G", "-Xms1G" },
         sbtScript = "/usr/local/bin/sbt",
         javaHome = "/usr/local/Cellar/openjdk@17/17.0.8/libexec/openjdk.jdk/Contents/Home",
         scalafmtConfigPath = "/Users/fele/Dev/ChatmeterRepo/chatmeter/.scalafmt.conf",
