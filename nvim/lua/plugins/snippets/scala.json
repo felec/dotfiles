@@ -95,6 +95,11 @@
     "body": ["val ${1:name} = mock[${1:value}]"],
     "description": "Mock Val Assignment"
   },
+  "def_single": {
+    "prefix": "d",
+    "body": "def ${1:name}: ${2:ReturnType} = ${3:}",
+    "description": "Single Line Method"
+  },
   "def": {
     "prefix": "def",
     "body": "def ${1:name}(${2:}): ${3:ReturnType} = ${4:}",
