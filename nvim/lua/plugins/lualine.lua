@@ -127,7 +127,6 @@ return {
       }
 
       return {
-
         options = {
           theme = theme,
           globalstatus = true,
@@ -138,7 +137,6 @@ return {
           disabled_filetypes = { statusline = { "lazy", "alpha" } },
           ignore_focus = {},
         },
-
         sections = {
           lualine_a = {
             vim_icons,
