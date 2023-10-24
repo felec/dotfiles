@@ -37,21 +37,29 @@ return {
           options = { toggle_hidden_on_enter = true },
           items = {
             {
-              name = "謹 FE",
+              name = "  BE",
               priority = 1,
+              matcher = function(buf)
+                return vim.endswith(buf.path, ".scala")
+                  or vim.endswith(buf.path, ".java")
+                  or vim.endswith(buf.path, ".py")
+                  or vim.endswith(buf.path, ".cpp")
+                  or vim.endswith(buf.path, ".cs")
+                  or vim.endswith(buf.path, ".go")
+                  or vim.endswith(buf.path, ".scad")
+                  or vim.endswith(buf.path, ".rs")
+                  or vim.endswith(buf.path, ".sh")
+              end,
+            },
+            {
+              name = "謹 FE",
+              priority = 2,
               matcher = function(buf)
                 return vim.endswith(buf.path, ".js")
                   or vim.endswith(buf.path, ".ts")
                   or vim.endswith(buf.path, ".jsx")
                   or vim.endswith(buf.path, ".tsx")
                   or vim.endswith(buf.path, ".html")
-              end,
-            },
-            {
-              name = "  BE",
-              priority = 2,
-              matcher = function(buf)
-                return vim.endswith(buf.path, ".scala")
               end,
             },
             {

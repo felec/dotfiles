@@ -1,10 +1,17 @@
+local handlers = {
+  ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" }),
+  ["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" }),
+}
+
 return {
   "neovim/nvim-lspconfig",
+  ---@class PluginLspOpts
   opts = {
     -- options for vim.diagnostic.config()
     diagnostics = {
       underline = true,
       update_in_insert = false,
+      float = { border = "rounded" },
       virtual_text = { source = "if_many", spacing = 4, prefix = "●" },
       severity_sort = true,
     },
@@ -18,16 +25,16 @@ return {
     -- LSP Server Settings
     ---@type lspconfig.options
     servers = {
-      html = {},
-      cssls = {},
-      bashls = {},
-      tsserver = {},
-      dockerls = {},
-      pyright = {},
-      yamlls = {},
-      tailwindcss = {},
+      html = { handlers = handlers },
+      cssls = { handlers = handlers },
+      bashls = { handlers = handlers },
+      tsserver = { handlers = handlers },
+      dockerls = { handlers = handlers },
+      pyright = { handlers = handlers },
+      yamlls = { handlers = handlers },
+      tailwindcss = { autostart = false, handlers = handlers },
       jsonls = {
-        -- lazy-load schemastore when needed
+        handlers = handlers,
         on_new_config = function(new_config)
           new_config.settings.json.schemas = new_config.settings.json.schemas or {}
           vim.list_extend(new_config.settings.json.schemas, require("schemastore").json.schemas())
@@ -42,6 +49,7 @@ return {
         },
       },
       lua_ls = {
+        handlers = handlers,
         settings = {
           Lua = {
             workspace = {
@@ -54,21 +62,5 @@ return {
         },
       },
     },
-    -- you can do any additional lsp server setup here
-    -- return true if you don't want this server to be setup with lspconfig
-    ---@type table<string, fun(server:string, opts:_.lspconfig.options):boolean?>
-    setup = {
-      -- example to setup with typescript.nvim
-      -- tsserver = function(_, opts)
-      --   require("typescript").setup({ server = opts })
-      --   return true
-      -- end,
-      -- Specify * to use this function as a fallback for any server
-      -- ["*"] = function(server, opts) end,
-    },
-  },
-  dependencies = {
-    "b0o/SchemaStore.nvim",
-    version = false,
   },
 }
