@@ -16,6 +16,12 @@ return {
         max_name_length = 30,
         max_prefix_length = 15, -- prefix used when a buffer is de-duplicated
         diagnostics = "nvim_lsp",
+        close_command = function(n)
+          require("mini.bufremove").delete(n, false)
+        end,
+        right_mouse_command = function(n)
+          require("mini.bufremove").delete(n, false)
+        end,
         diagnostics_indicator = function(_, _, diag)
           local icons = require("lazyvim.config").icons.diagnostics
           local ret = (diag.error and icons.Error .. diag.error .. " " or "")
