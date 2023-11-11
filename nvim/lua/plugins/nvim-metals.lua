@@ -34,7 +34,7 @@ return {
         serverProperties = { "-Xmx4G", "-Xms1G" },
         sbtScript = "/usr/local/bin/sbt",
         javaHome = "/usr/local/Cellar/openjdk@17/17.0.8/libexec/openjdk.jdk/Contents/Home",
-        scalafmtConfigPath = "/Users/fele/Dev/ChatmeterRepo/chatmeter/.scalafmt.conf",
+        scalafmtConfigPath = "/Users/fele/Dev/chatmeter/.scalafmt.conf",
         excludedPackages = {
           "akka.actor.typed.javadsl",
           "com.github.swagger.akka.javadsl",
