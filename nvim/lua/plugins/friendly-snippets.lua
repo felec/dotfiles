@@ -1,6 +1,7 @@
 return {
   {
     "rafamadriz/friendly-snippets",
+    pin = true,
     config = function()
       local snip = require("luasnip")
 
