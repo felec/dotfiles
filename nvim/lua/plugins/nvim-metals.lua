@@ -31,9 +31,6 @@ return {
         superMethodLensesEnabled = true,
         enableSemanticHighlighting = true,
         showImplicitConversionsAndClasses = true,
-        serverProperties = { "-Xmx4G", "-Xms1G" },
-        sbtScript = "/usr/local/bin/sbt",
-        javaHome = "/usr/local/Cellar/openjdk@17/17.0.8/libexec/openjdk.jdk/Contents/Home",
         scalafmtConfigPath = "/Users/fele/Dev/chatmeter/.scalafmt.conf",
         excludedPackages = {
           "akka.actor.typed.javadsl",

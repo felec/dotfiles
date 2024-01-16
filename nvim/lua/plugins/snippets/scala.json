@@ -97,12 +97,12 @@
   },
   "def_single": {
     "prefix": "d",
-    "body": "def ${1:name}: ${2:ReturnType} = ${3:}",
+    "body": "def ${1:name}: ${2:} = ${3:}",
     "description": "Single Line Method"
   },
   "def": {
     "prefix": "def",
-    "body": "def ${1:name}(${2:}): ${3:ReturnType} = ${4:}",
+    "body": "def ${1:name}(${2:}): ${3:} = ${4:}",
     "description": "Method"
   },
   "def_partial": {
@@ -187,7 +187,7 @@
   },
   "print_line": {
     "prefix": "pl",
-    "body": ["println(${1:argument})${2:}"],
+    "body": ["println(${1:argument})"],
     "description": "Print Line"
   },
   "comment_block": {
