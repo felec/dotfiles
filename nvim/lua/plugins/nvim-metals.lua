@@ -31,6 +31,7 @@ return {
         superMethodLensesEnabled = true,
         enableSemanticHighlighting = true,
         showImplicitConversionsAndClasses = true,
+        serverProperties = { "-Xms1G", "-Xmx4G" },
         scalafmtConfigPath = "/Users/fele/Dev/chatmeter/.scalafmt.conf",
         excludedPackages = {
           "akka.actor.typed.javadsl",

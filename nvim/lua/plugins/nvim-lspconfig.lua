@@ -33,6 +33,7 @@ return {
       pyright = { handlers = handlers },
       yamlls = { handlers = handlers },
       tailwindcss = { autostart = false, handlers = handlers },
+      glint = { autostart = false, handlers = handlers },
       jsonls = {
         handlers = handlers,
         on_new_config = function(new_config)

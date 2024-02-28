@@ -180,10 +180,25 @@
     "body": ["${1:name} <- ${2:expression}"],
     "description": "For Comprehension Generator"
   },
+  "log_trace": {
+    "prefix": "lt",
+    "body": ["log.trace(${1:argument})"],
+    "description": "Log Trace"
+  },
+  "log_debug": {
+    "prefix": "ld",
+    "body": ["log.debug(${1:argument})"],
+    "description": "Log Debug"
+  },
   "log_info": {
     "prefix": "li",
     "body": ["log.info(${1:argument})"],
     "description": "Log Information"
+  },
+  "log_warn": {
+    "prefix": "lw",
+    "body": ["log.warn(${1:argument})"],
+    "description": "Log Warn"
   },
   "print_line": {
     "prefix": "pl",
