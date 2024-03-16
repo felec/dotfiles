@@ -4,6 +4,7 @@ return {
     opts = {
       ensure_installed = {
         -- LSP
+        "glint",
         "pyright",
         "css-lsp",
         "html-lsp",
@@ -16,10 +17,8 @@ return {
         "tailwindcss-language-server",
         -- Linter
         "mypy",
-        "jsonlint",
-        "shellcheck",
         "markdownlint",
-        -- DSP
+        -- DAP
         "js-debug-adapter",
         "bash-debug-adapter",
         -- Formatter

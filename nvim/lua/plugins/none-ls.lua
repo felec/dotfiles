@@ -7,8 +7,6 @@ return {
         root_dir = require("null-ls.utils").root_pattern(".null-ls-root", ".neoconf.json", "Makefile", ".git"),
         sources = {
           nls.builtins.diagnostics.mypy,
-          nls.builtins.diagnostics.shellcheck,
-          nls.builtins.diagnostics.jsonlint,
           nls.builtins.diagnostics.markdownlint,
           nls.builtins.formatting.stylua,
           nls.builtins.formatting.shfmt,
@@ -34,3 +32,11 @@ return {
     end,
   },
 }
+
+-- config = function()
+--        require("null-ls").register(require("none-ls-shellcheck.diagnostics"))
+--        require("null-ls").register(require("none-ls-shellcheck.code_actions"))
+--    end,
+--    dependencies = {
+--        "gbprod/none-ls-shellcheck.nvim",
+--    },

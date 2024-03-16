@@ -19,6 +19,8 @@ map("n", "<c-k>", "<cmd>call append(line('.')-1, '')<cr>", { desc = "Insert blan
 map("i", "jj", "<esc>", { desc = "Exit insert mode" })
 map("i", "<c-l>", "<c-o>a", { desc = "Move right of enclosing surround object" })
 
+map("n", "q", "<Nop>", { desc = "Disable macros" })
+
 -- Setup for treesj
 -- map("n", "<leader>m", function()
 --   require("treesj").toggle({ split = { recursive = true } })
