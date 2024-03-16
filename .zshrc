@@ -121,6 +121,17 @@ eval "$(starship init zsh)"
 # Compilation flags
 # export ARCHFLAGS="-arch x86_64"
 
+
+# Helper functions
+dump_brew() {
+    brew bundle dump --force
+}
+
+update_kitty() {
+    curl -L https://sw.kovidgoyal.net/kitty/installer.sh | sh /dev/stdin
+}
+
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -129,7 +140,6 @@ eval "$(starship init zsh)"
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
-
 alias nv="nvim"
 alias k="kubectl"
 alias so="source"
