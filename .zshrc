@@ -15,6 +15,7 @@ export ZSH="$HOME/.oh-my-zsh"
 # ZSH_THEME_RANDOM_CANDIDATES=( "robbyrussell" "agnoster" )
 MODE_INDICATOR="%F{white}+%f"
 INSERT_MODE_INDICATOR="%F{yellow}+%f"
+ZSH_HIGHLIGHT_MAXLENGTH=0
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
 
@@ -146,7 +147,7 @@ alias so="source"
 alias lg="lazygit"
 alias dump="brew bundle dump --force"
 
-# Add connect_wifi script
+# Add local scripts
 export PATH="$PATH:$HOME/Dev/scripts"
 
 # Added by n-install (see http://git.io/n-install-repo).

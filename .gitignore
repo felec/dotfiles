@@ -10,3 +10,4 @@ data
 
 # nvim lua
 nvim/lazy-lock.json
+nvim/lazyvim.json
