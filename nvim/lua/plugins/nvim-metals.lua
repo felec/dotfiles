@@ -1,7 +1,7 @@
 return {
   {
     "scalameta/nvim-metals",
-    dependencies = { "nvim-lua/plenary.nvim", "mfussenegger/nvim-dap" },
+    dependencies = { "nvim-lua/plenary.nvim" },
     config = function()
       local metals_config = require("metals").bare_config()
       local nvim_metals_group = vim.api.nvim_create_augroup("nvim-metals", { clear = true })
@@ -39,29 +39,6 @@ return {
           "com.github.swagger.akka.javadsl",
         },
       }
-
-      require("dap").configurations.scala = {
-        {
-          type = "scala",
-          request = "launch",
-          name = "RunOrTest",
-          metals = {
-            runType = "runOrTestFile",
-          },
-        },
-        {
-          type = "scala",
-          request = "launch",
-          name = "Test Target",
-          metals = {
-            runType = "testTarget",
-          },
-        },
-      }
-
-      metals_config.on_attach = function(_, _)
-        require("metals").setup_dap()
-      end
 
       vim.api.nvim_create_autocmd("FileType", {
         pattern = { "scala", "sbt", "java" },
