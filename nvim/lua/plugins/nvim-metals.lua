@@ -1,7 +1,7 @@
 return {
   {
     "scalameta/nvim-metals",
-    dependencies = { "nvim-lua/plenary.nvim" },
+    dependencies = { "nvim-lua/plenary.nvim", "mfussenegger/nvim-dap" },
     config = function()
       local metals_config = require("metals").bare_config()
       local nvim_metals_group = vim.api.nvim_create_augroup("nvim-metals", { clear = true })
@@ -9,13 +9,13 @@ return {
       local handlers = {
         ["textDocument/hover"] = vim.lsp.with(vim.lsp.handlers.hover, { border = "rounded" }),
         ["textDocument/signatureHelp"] = vim.lsp.with(vim.lsp.handlers.signature_help, { border = "rounded" }),
-        ["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
-          underline = true,
-          update_in_insert = false,
-          float = { border = "rounded" },
-          virtual_text = { source = "if_many", spacing = 4, prefix = "●" },
-          severity_sort = true,
-        }),
+        -- ["textDocument/publishDiagnostics"] = vim.lsp.with(vim.lsp.diagnostic.on_publish_diagnostics, {
+        --   underline = true,
+        --   update_in_insert = false,
+        --   float = { border = "rounded" },
+        --   virtual_text = { source = "if_many", spacing = 4, prefix = "●" },
+        --   severity_sort = true,
+        -- }),
       }
 
       if pcall(require, "cmp_nvim_lsp") then
@@ -31,14 +31,35 @@ return {
         superMethodLensesEnabled = true,
         enableSemanticHighlighting = true,
         showImplicitConversionsAndClasses = true,
-        serverProperties = { "-Xms1G" },
-        serverVersion = "latest.snapshot ",
         scalafmtConfigPath = "/Users/fele/Dev/chatmeter/.scalafmt.conf",
         excludedPackages = {
           "akka.actor.typed.javadsl",
           "com.github.swagger.akka.javadsl",
         },
       }
+
+      require("dap").configurations.scala = {
+        {
+          type = "scala",
+          request = "launch",
+          name = "RunOrTest",
+          metals = {
+            runType = "runOrTestFile",
+          },
+        },
+        {
+          type = "scala",
+          request = "launch",
+          name = "Test Target",
+          metals = {
+            runType = "testTarget",
+          },
+        },
+      }
+
+      metals_config.on_attach = function(_, _)
+        require("metals").setup_dap()
+      end
 
       vim.api.nvim_create_autocmd("FileType", {
         pattern = { "scala", "sbt", "java" },

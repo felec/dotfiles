@@ -9,6 +9,4 @@ data
 .DS_Store
 
 # nvim lua
-nvim/lazy-lock.json
-nvim/lazyvim.json
 nvim/lazyvim.json
