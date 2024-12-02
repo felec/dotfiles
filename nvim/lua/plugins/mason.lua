@@ -15,6 +15,7 @@ return {
         "dockerfile-language-server",
         "typescript-language-server",
         "tailwindcss-language-server",
+        "mdx-analyzer",
         -- Linter
         "mypy",
         "markdownlint",

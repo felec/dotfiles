@@ -32,6 +32,7 @@ return {
       dockerls = { handlers = handlers },
       pyright = { handlers = handlers },
       yamlls = { handlers = handlers },
+      mdx_analyzer = { handlers = handlers },
       tailwindcss = { autostart = false, handlers = handlers },
       glint = { autostart = false, handlers = handlers },
       jsonls = {
