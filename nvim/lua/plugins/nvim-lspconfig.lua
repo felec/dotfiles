@@ -28,7 +28,7 @@ return {
       html = { handlers = handlers },
       cssls = { handlers = handlers },
       bashls = { handlers = handlers },
-      tsserver = { handlers = handlers },
+      ts_ls = { handlers = handlers },
       dockerls = { handlers = handlers },
       pyright = { handlers = handlers },
       yamlls = { handlers = handlers },
