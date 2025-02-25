@@ -19,7 +19,7 @@ return {
         -- Linter
         "mypy",
         "markdownlint",
-        "cspell",
+        "jsonlint",
         -- DAP
         "js-debug-adapter",
         "bash-debug-adapter",
