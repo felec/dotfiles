@@ -5,7 +5,7 @@ return {
       -- Event to trigger linters
       events = { "BufWritePost", "BufReadPost", "InsertLeave" },
       linters_by_ft = {
-        python = { "mypy" },
+        python = { "ruff" },
         sh = { "shellcheck" },
         md = { "markdownlint" },
         mdx = { "markdownlint" },

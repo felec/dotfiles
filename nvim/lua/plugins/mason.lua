@@ -17,7 +17,7 @@ return {
         "tailwindcss-language-server",
         "mdx-analyzer",
         -- Linter
-        "mypy",
+        "ruff",
         "markdownlint",
         "jsonlint",
         -- DAP
@@ -25,7 +25,6 @@ return {
         "bash-debug-adapter",
         -- Formatter
         "shfmt",
-        "black",
         "stylua",
         "yamlfmt",
         "prettier",

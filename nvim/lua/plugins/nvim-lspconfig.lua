@@ -31,6 +31,7 @@ return {
       ts_ls = { handlers = handlers },
       dockerls = { handlers = handlers },
       pyright = { handlers = handlers },
+      ruff = { handlers = handlers },
       yamlls = { handlers = handlers },
       mdx_analyzer = { handlers = handlers },
       tailwindcss = { autostart = false, handlers = handlers },
