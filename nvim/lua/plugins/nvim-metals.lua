@@ -32,6 +32,7 @@ return {
         enableSemanticHighlighting = true,
         showImplicitConversionsAndClasses = true,
         scalafmtConfigPath = "/Users/fele/Dev/chatmeter/.scalafmt.conf",
+        javaHome = "/usr/local/Cellar/openjdk@17/17.0.15/libexec/openjdk.jdk/Contents/Home",
         excludedPackages = {
           "akka.actor.typed.javadsl",
           "com.github.swagger.akka.javadsl",

@@ -1,5 +1,9 @@
 return {
   {
+    "williamboman/mason-lspconfig.nvim",
+    enabled = false,
+  },
+  {
     "Wansmer/treesj",
     enabled = false,
   },
